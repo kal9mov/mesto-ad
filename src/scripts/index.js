@@ -200,11 +200,8 @@ const handleLogoClick = () => {
       const likers = [];
 
       cards.forEach((card) => {
-        // user — это пользователь, который поставил лайк (из массива лайков карточки)
         card.likes.forEach((user) => {
           let existingLiker = null;
-
-          // candidate — это запись в нашем "блокноте", которую мы проверяем (сравниваем с user)
           likers.forEach((candidate) => {
             if (candidate.name === user.name) {
               existingLiker = candidate;
@@ -249,7 +246,7 @@ const handleLogoClick = () => {
     });
 };
 
-// EventListeners
+// EventListeners/
 siteLogo.addEventListener("click", handleLogoClick);
 profileForm.addEventListener("submit", handleProfileFormSubmit);
 cardForm.addEventListener("submit", handleCardFormSubmit);
