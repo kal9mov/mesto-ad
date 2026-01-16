@@ -246,7 +246,7 @@ const handleLogoClick = () => {
     });
 };
 
-// EventListeners/
+// EventListeners/.
 siteLogo.addEventListener("click", handleLogoClick);
 profileForm.addEventListener("submit", handleProfileFormSubmit);
 cardForm.addEventListener("submit", handleCardFormSubmit);
